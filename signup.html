@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MechanicMate - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-container">
+        <h2>Create Account</h2>
+        <p>Join MechanicMate today</p>
+
+        <form id="signupForm">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Create Password" required>
+
+            <select name="role" required>
+                <option value="">Select Role</option>
+                <option value="user">User</option>
+                <option value="mechanic">Mechanic</option>
+            </select>
+
+            <button type="submit" class="login-btn2">Sign Up</button>
+        </form>
+
+        <p class="signup-text">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+    </div>
+
+    <!-- IMPORTANT: Script body ke end me -->
+    <script src="signup.js"></script>
+
+</body>
+
+</html>

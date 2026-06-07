@@ -1,0 +1,141 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   LOGIN PAGE BACKGROUND
+================================ */
+body.login-body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+    /* Background image + dark overlay */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("./images/bg.png") 30% center / cover no-repeat;
+
+    display: flex;
+    justify-content: flex-end;
+    /* 👉 form right side */
+    align-items: center;
+    padding-right: 80px;
+}
+
+/* ===============================
+   LOGIN CARD (GLASS EFFECT)
+================================ */
+.login-container {
+    width: 380px;
+    padding: 40px;
+    border-radius: 18px;
+
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    color: #fff;
+}
+
+/* ===============================
+   HEADING & TEXT
+================================ */
+.login-container h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.login-container p {
+    color: #ccc;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* ===============================
+   INPUT FIELDS
+================================ */
+.login-container input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+}
+
+.login-container input::placeholder {
+    color: #ddd;
+}
+
+.login-container input:focus {
+    border-color: #ff6a1a;
+}
+
+/* ===============================
+   LOGIN BUTTON
+================================ */
+.login-btn2 {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+
+    background: linear-gradient(135deg, #ff6a1a, #ff3d00);
+    border: none;
+    border-radius: 12px;
+
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+    box-shadow: 0 6px 18px rgba(255, 106, 26, 0.45);
+}
+
+.login-btn2:hover {
+    background: linear-gradient(135deg, #ff5200, #e63b00);
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   SIGNUP TEXT
+================================ */
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.signup-text a {
+    color: #ff6a1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    body.login-body {
+        justify-content: center;
+        padding-right: 0;
+        background-position: center;
+    }
+
+    .login-container {
+        width: 90%;
+    }
+}
