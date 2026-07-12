@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mechanic Dashboard | MechanicMate</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <header class="dash-header">
+        <h2>MechanicMate</h2>
+        <a href="login.html" class="logout-btn">Logout</a>
+    </header>
+
+    <section class="dashboard">
+        <h3>Welcome Mechanic 🔧</h3>
+        <p>Manage your availability</p>
+
+        <!-- STATUS -->
+        <div class="status-box">
+            <span>Status:</span>
+            <button id="onlineBtn" class="online-btn">Online</button>
+            <button id="offlineBtn" class="offline-btn">Offline</button>
+            
+        </div>
+
+        <!-- MAP -->
+        <div id="mechanicMap" style="height:350px; border-radius:20px;"></div>
+        <h3>New Requests</h3>
+        <div id="requests"></div>
+
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="mechanic-dashboard.js"></script>
+</body>
+
+</body>
+
+</html>
