@@ -1,0 +1,5 @@
+node_modules/
+MechanicMate-backend/node_modules/
+
+.env
+*.log
